@@ -29,6 +29,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      working-directory: ./aws/aws
       run: mvn -B package --file pom.xml -DskipTests
 
     - name: Docker Compose Build
