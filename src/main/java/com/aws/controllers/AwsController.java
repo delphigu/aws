@@ -11,7 +11,7 @@ public class AwsController {
 	
 	@GetMapping
 	public ResponseEntity<String> teste() {
-		return ResponseEntity.ok("ola aws");
+		return ResponseEntity.ok("ola aws vvvvvvvvvvvvv");
 		
 	}
 
