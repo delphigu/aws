@@ -34,7 +34,7 @@ jobs:
 
     - name: Docker Compose Build
       
-      run: docker build .
+      run: docker build -t augusto70/aws:1.0 .
 
     - name: Push to Docker Hub Container Registry
       run: |
