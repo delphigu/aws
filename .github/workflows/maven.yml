@@ -32,7 +32,7 @@ jobs:
       run: mvn -B package --file pom.xml -DskipTests
 
     - name: Docker Compose Build
-      working-directory: ./aws
+      working-directory: ./aws/aws
       run: docker build .
 
     - name: Push to Docker Hub Container Registry
