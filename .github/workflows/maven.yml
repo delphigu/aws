@@ -38,10 +38,10 @@ jobs:
 
     - name: Push to Docker Hub Container Registry
       run: |
-        docker tag ${{ secrets.DOCKER_USERNAME }}/aws:1.0 ${{ secrets.DOCKER_USERNAME }}/aws:${{ github.run_id }}
+        docker tag augusto70/aws:1.0 augusto70/aws:${{ github.run_id }}
 
-        docker push ${{ secrets.DOCKER_USERNAME }}/aws:${{ github.run_id }}
-        docker push ${{ secrets.DOCKER_USERNAME }}/aws:1.0
+        docker push augusto70/aws:${{ github.run_id }}
+        docker push augusto70/aws:1.0
       
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
