@@ -3,4 +3,4 @@ FROM openjdk:17-alpine
 	COPY ./target/*.jar  /app/aws.jar
 	WORKDIR /app
 	ENTRYPOINT ["java","-jar","aws.jar"]
-	EXPOSE 8080
+	EXPOSE 80
